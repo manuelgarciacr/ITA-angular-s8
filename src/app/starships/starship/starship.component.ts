@@ -8,15 +8,15 @@ import { NgFor } from "@angular/common";
 import { FilmComponent } from "./film/film.component";
 import { IFilm } from "src/model/IFilm";
 
-const jpgUrl = 'https://starwars-visualguide.com/assets/img/starships/';
-
+//const jpgUrl = 'https://starwars-visualguide.com/assets/img/starships/';
+const jpgUrl = './assets/img/'
 @Component({
     selector: 'app-starship',
     standalone: true,
     templateUrl: './starship.component.html',
     imports: [PilotComponent, FilmComponent, NgFor],
     styles: [
-        'img {width: 100%; max-width: 600px}',
+        'img {width: 100%; max-width: 600px; max-height: 400px; object-fit: contain}',
         'p>span {color: #999; margin-left: .4rem}',
         'p {margin-top: 0; margin-bottom: 0}',
     ],

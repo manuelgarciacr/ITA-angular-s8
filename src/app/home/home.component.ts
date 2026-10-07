@@ -59,7 +59,7 @@ export class HomeComponent implements OnDestroy {
 
     constructor() {
         this.audio = new Audio(
-            '../../assets/audio/StarWarsThemeSongByJohnWilliams.mp3'
+            'assets/audio/StarWarsThemeSongByJohnWilliams.mp3'
         );
         this.audio.muted = false;
     }
